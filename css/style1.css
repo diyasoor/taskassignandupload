@@ -1,0 +1,203 @@
+html, body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divstyle1{
+    width: 55%;
+    height:100%;
+    float: left;
+}
+.divstyle2{
+    width: 45%;
+    height:100%;
+}
+
+#cloud{
+    animation: cloud 2s ease-in-out infinite alternate;
+    transform-origin: left;
+
+}
+
+@keyframes cloud{
+    from{
+        transform:  translate(0px);
+    }
+    to{
+        transform: translate(30px)
+    }
+}
+
+#hand1{
+    animation: hand1 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes hand1{
+    10%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(10deg);
+    }
+}
+
+#hand2{
+    animation: hand2 1s ease-in-out infinite alternate;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+@keyframes hand2{
+    10%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(10deg);
+    }
+}
+
+#leaf1, #leaf2{
+    animation: leaf1 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes leaf1{
+    10%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(5deg);
+    }
+}
+
+#screen1, #screen2, #screen3{
+    animation: screen 1s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes screen{
+    from{
+        fill: white;
+    }
+    to{
+        fill: rgb(255, 255, 108);
+    }
+}
+
+.box1{
+    width: 500px;
+    height: 240px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box2{
+    width: 600px;
+    height: 240px;
+    margin-left: 290px;  
+    margin-top: 20px;
+}
+.box3{
+    width: 250px;
+    height: 240px;
+    margin-top: -60px;
+    margin-left: 30px;
+}
+
+.taskarea{
+    background-color: #dde5ff;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+#title{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#namefield{
+    height: 70px;
+    margin: 40px;
+}
+
+label[for=namefield]{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#taskfield{
+    height: 70px;
+    margin: 40px;
+}
+
+label[for=taskfield]{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#select1{
+    border: 2px solid #555;
+    height: 40px;
+    width: 250px;
+    padding: 0 15px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#select2{
+    border: 2px solid #555;
+    height: 40px;
+    width: 250px;
+    padding: 0 15px;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+#note{
+    margin: 50px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3f2a91;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#nextbtn{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 175px;
+}
+
+button{
+    background-color: #3f2a91;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+
+
+
